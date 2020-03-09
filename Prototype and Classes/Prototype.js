@@ -64,8 +64,8 @@ Array.prototype.compact = function ArrayCompact(callback) {
 
 
 let b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const reducer = (accumulator, currentValue) => accumulator * currentValue;
+const reducer = (accumulator, currentValue) => accumulator + currentValue;
 const map1 = b.compact(reducer);
 
-console.log(map1)
+// console.log(map1)
 // b.iterate(e=>{console.log(e)})
