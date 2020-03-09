@@ -61,4 +61,23 @@ let addG = (x) => {
 }
 
 
-console.log(addG(1)(2)(3)(4))
+function myCounter(start){
+    let count=start;
+
+    return{
+        up:()=>{count++,console.log(count)},
+        down:()=>{count--,console.log(count)},
+        get:()=>{return count; }
+    }
+}
+
+
+let myCounterr=myCounter(5);
+// console.log(myCounterr.count)
+myCounterr.up(); // 6
+// console.log(myCounterr.count)
+myCounterr.up(); // 7
+// console.log(myCounterr.count)
+myCounterr.down(); // 6
+console.log(myCounterr.get())
+
